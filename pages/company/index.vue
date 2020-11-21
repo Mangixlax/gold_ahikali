@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <main-header/>
-    <main-slider/>
   </div>
 </template>
 

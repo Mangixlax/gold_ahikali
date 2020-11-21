@@ -14,11 +14,17 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@assets/styles/scss/main.scss'
+    '@assets/styles/scss/main.scss',
+    '@assets/styles/css/reset.css',
+    '@assets/fonts/fonts.css',
+    "@assets/animations/animations.css"
+
+  
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    "@plugins/slider-swiper.js"
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
