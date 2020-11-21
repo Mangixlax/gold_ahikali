@@ -234,8 +234,26 @@
 }
 
 .fade-in-first {
-	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.1s both;
-	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.1s both;
+	-webkit-animation: fade-in-first 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.1s both;
+	        animation: fade-in-first .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.1s both;
+}
+
+@-webkit-keyframes fade-in-first {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
