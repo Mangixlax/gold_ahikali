@@ -6,7 +6,7 @@
             <swiper-slide class="slide"><img src="@/assets/img/slider/img1.jpg" alt=""></swiper-slide>
             <swiper-slide class="slide"><img src="@/assets/img/slider/img2.jpg" alt=""></swiper-slide>
             <swiper-slide class="slide"><img src="@/assets/img/slider/img1.jpg" alt=""></swiper-slide>
-            <swiper-slide class="slide"><img src="@/assets/img/slider/img2.jpg" alt=""></swiper-slide>``
+            <swiper-slide class="slide"><img src="@/assets/img/slider/img2.jpg" alt=""></swiper-slide>
             <swiper-slide class="slide"><img src="@/assets/img/slider/img1.jpg" alt=""></swiper-slide>
             <swiper-slide class="slide"><img src="@/assets/img/slider/img2.jpg" alt=""></swiper-slide>    
         </swiper> 
@@ -247,7 +247,7 @@
     opacity: 1;
   }
 }
-@keyframes fade-in {
+@keyframes fade-in-first {
   0% {
     opacity: 0;
   }

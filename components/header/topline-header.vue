@@ -8,7 +8,7 @@
 			<div class="topline-header__navbar">
 				<nuxt-link class="topline-header__item" to="/media/grazhdanstvo-turcii-1">Всё о гражданстве в турции</nuxt-link>
 				<nuxt-link class="topline-header__item" to="/company/review">Читать отзывы</nuxt-link>
-				<nuxt-link class="topline-header__item" to="/about_us">Ознакомительный тур</nuxt-link>
+				<nuxt-link class="topline-header__item" to="/company/review">Ознакомительный тур</nuxt-link>
 				<button class="topline-header__item">Заказать обратный звонок</button>
 				<div class="topline-header__item">
 					<span class="topline-header__switcher1"> Ру </span>
@@ -108,4 +108,10 @@
 	    border: none;
 	 }
 
+	@media (max-width: 1100px) {
+
+		.topline-header__item {
+			display: none;
+		}
+	}
 </style>

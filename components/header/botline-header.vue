@@ -10,21 +10,25 @@
 					<nuxt-link class="botline-header__item" to="/media">МЕДИА</nuxt-link>
 				</div>				
 			</div>
-			<div class="botline-header__phone">
+			<div class="botline-header__phonebar">
 
-			 	<nuxt-link v-show='false' class="botline-header__item" to="/about_us">
+			 	<nuxt-link  class="botline-header__burger" to="/company/review">
 			 		<span class="_1XZi"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="18" height="18"><path fill="#fff" fill-opacity=".96" d="M2.772 1.257c-.848 0-1.553.706-1.5 1.553a12.702 12.702 0 003.707 8.21 12.701 12.701 0 008.21 3.708c.848.053 1.553-.652 1.553-1.5V11.93a1.5 1.5 0 00-1.327-1.492l-1.89-.217a1.49 1.49 0 00-1.23.426l-1.387 1.389a11.242 11.242 0 01-2.864-2.08c-.834-.834-1.54-1.8-2.08-2.864l1.389-1.387a1.49 1.49 0 00.426-1.23l-.217-1.89A1.5 1.5 0 004.07 1.256H2.772z"></path></svg></span>
 			 	</nuxt-link>
 
-				<nuxt-link class="botline-header__item" to="/about_us">
+				<nuxt-link class="botline-header__phone" to="/company/review">
 					<span class="d79H"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 16" width="14" height="14"><path fill="#fff" fill-opacity=".96" d="M10.625 3.446a.625.625 0 00-.625.625v1.25H8.75a.625.625 0 000 1.25H10v1.25a.625.625 0 001.25 0v-1.25h1.25a.625.625 0 000-1.25h-1.25v-1.25a.625.625 0 00-.625-.625zm-7.482.007c-.706 0-1.293.587-1.25 1.293a10.585 10.585 0 003.09 6.842 10.585 10.585 0 006.842 3.09c.706.044 1.294-.544 1.294-1.25v-1.081a1.25 1.25 0 00-1.106-1.244l-1.576-.181a1.242 1.242 0 00-1.024.355l-.643.644c-.306.306-.777.386-1.147.16a9.393 9.393 0 01-1.753-1.38 9.392 9.392 0 01-1.38-1.753c-.225-.37-.146-.84.16-1.146l.644-.643c.269-.27.4-.643.355-1.025l-.18-1.576a1.25 1.25 0 00-1.244-1.105H3.143z"></path></svg>
 				    +90 (532) 497-57-55
 				    </span>
 				</nuxt-link>
 
-				<nuxt-link  class="botline-header__item" to="/about_us">
+				<nuxt-link  class="botline-header__phone" to="/company/review">
 			 		<span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="_2N_0"><path fill="#fff" fill-opacity=".96" d="M5.7 1.4c-1.8 0-3.3 1.5-3.3 3.3v9.2c0 2 2 3.3 3.8 2.7l1.8-.7c.6-.2 1.3-.2 2 0l1.8.7c1.9.7 3.8-.7 3.8-2.6V4.7c0-1.8-1.5-3.3-3.3-3.3H5.7zM6 3.1h6c1.1 0 2 .9 2 2v8.7c0 .9-.9 1.6-1.8 1.2l-2.1-.8c-.7-.3-1.4-.3-2.1 0l-2.2.8c-.9.3-1.8-.3-1.8-1.3V5c0-1 .9-1.9 2-1.9z"></path></svg></span>
 			 	</nuxt-link>
+
+				
+				<span class="botline-header__burger"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="#fff" fill-opacity=".96" d="M1.81 3a.81.81 0 00-.572.226.785.785 0 00-.238.56.775.775 0 00.238.56.8.8 0 00.572.225h14.38a.811.811 0 00.572-.226.786.786 0 00.238-.56.774.774 0 00-.238-.559A.8.8 0 0016.19 3H1.81zm0 4.714a.81.81 0 00-.572.226A.785.785 0 001 8.5a.775.775 0 00.238.56.8.8 0 00.572.226h14.38a.811.811 0 00.572-.226A.786.786 0 0017 8.5a.774.774 0 00-.238-.56.8.8 0 00-.572-.226H1.81zm0 4.714a.81.81 0 00-.572.227.785.785 0 00-.238.56.775.775 0 00.238.559.8.8 0 00.572.226h14.38a.81.81 0 00.572-.226.786.786 0 00.238-.56.774.774 0 00-.238-.56.8.8 0 00-.572-.226H1.81z"></path></svg></span>
+
 			</div>						
 		</div>
 	</div>
@@ -52,12 +56,21 @@
 	&__navbar {
 		padding: 0px 0px 0px 58px;		
 	}
-	&__phone {
+	&__phonebar {
 		display: flex;
 	}
+	&__phone {
+		padding: 10px;
+	}
+
 	&__item {
 		padding: 10px;
 		
+	}
+	&__burger {
+		padding: 10px;
+		display: none;
+		justify-content: center;
 	}
 	& a {
 		color: #fff;
@@ -81,5 +94,19 @@
 	._2N_0 {
 		width: 18px;
         height: 18px;
+	}
+
+	@media (max-width: 1100px) {
+		.botline-header__burger {
+			display: flex;
+		}
+
+		.botline-header__phone {
+			display: none;
+		}
+
+		.botline-header__item {
+			display: none;
+		}
 	}
 </style>
